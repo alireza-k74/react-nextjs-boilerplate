@@ -37,7 +37,19 @@
 
 ## شروع سریع
 
+این پروژه به‌صورت پیش‌فرض با **Yarn** (`yarn.lock`) مدیریت می‌شود. در صورت تمایل می‌توانید از npm هم استفاده کنید.
+
+فیلد `packageManager` نسخه **Yarn 3** را مشخص می‌کند؛ یک بار Corepack را فعال کنید (همراه Node.js 16.10 به بالا) تا همان نسخه استفاده شود:
+
+```bash
+corepack enable
+```
+
 ### 1) نصب وابستگی ها
+
+```bash
+yarn install
+```
 
 ```bash
 npm install
@@ -54,6 +66,10 @@ cp .env.example .env.local
 ### 3) اجرای پروژه
 
 ```bash
+yarn dev
+```
+
+```bash
 npm run dev
 ```
 
@@ -61,14 +77,16 @@ npm run dev
 
 ## اسکریپت ها
 
-- `npm run dev` اجرای نسخه توسعه
-- `npm run build` بیلد production
-- `npm run start` اجرای نسخه production
-- `npm run lint` اجرای ESLint
-- `npm run lint:fix` رفع خودکار خطاهای lint
-- `npm run format` فرمت با Prettier
-- `npm run format:check` بررسی فرمت
-- `npm run typecheck` بررسی TypeScript
+| کار              | Yarn                | npm                    |
+| ---------------- | ------------------- | ---------------------- |
+| اجرای نسخه توسعه | `yarn dev`          | `npm run dev`          |
+| بیلد production  | `yarn build`        | `npm run build`        |
+| اجرای production | `yarn start`        | `npm run start`        |
+| ESLint           | `yarn lint`         | `npm run lint`         |
+| رفع خودکار lint  | `yarn lint:fix`     | `npm run lint:fix`     |
+| فرمت Prettier    | `yarn format`       | `npm run format`       |
+| بررسی فرمت       | `yarn format:check` | `npm run format:check` |
+| بررسی TypeScript | `yarn typecheck`    | `npm run typecheck`    |
 
 ## بومی سازی (i18n)
 
@@ -101,4 +119,4 @@ npm run dev
 2. قرارداد API را در `src/services` اضافه کنید.
 3. کلیدهای کوئری را از `src/constants/query-keys.ts` استفاده کنید.
 4. متن های رابط کاربری را در هر دو فایل ترجمه به روز کنید.
-5. قبل از PR، `lint` و `build` را اجرا کنید.
+5. قبل از PR، `yarn lint` و `yarn build` (یا معادل npm) را اجرا کنید.

@@ -38,5 +38,5 @@
 
 ## Quality Gates
 
-- Run `npm run lint` and `npm run build` before merging.
+- Run `yarn lint` and `yarn build` (or `npm run lint` / `npm run build`) before merging.
 - Keep Husky pre-commit checks enabled with lint-staged.

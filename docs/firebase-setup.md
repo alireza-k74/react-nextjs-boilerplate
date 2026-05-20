@@ -30,7 +30,7 @@ Copy `.env.example` to `.env.local` and set:
 
 ## 4) Verify Integration
 
-- Start app with `npm run dev`.
+- Start app with `yarn dev` (or `npm run dev`).
 - Call wrappers from `src/lib/firebase` in a test page.
 - Confirm no runtime warnings for missing Firebase config.
 

@@ -36,7 +36,19 @@ See:
 
 ## Getting Started
 
+This project uses **Yarn** by default (`yarn.lock`). npm works too if you prefer it.
+
+The `packageManager` field pins **Yarn 3**; enable Corepack once (ships with Node.js 16.10+) so the right Yarn version is used:
+
+```bash
+corepack enable
+```
+
 ### 1) Install dependencies
+
+```bash
+yarn install
+```
 
 ```bash
 npm install
@@ -53,6 +65,10 @@ Then update values in `.env.local`.
 ### 3) Start development server
 
 ```bash
+yarn dev
+```
+
+```bash
 npm run dev
 ```
 
@@ -60,14 +76,16 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Available Scripts
 
-- `npm run dev` - start development server
-- `npm run build` - create production build
-- `npm run start` - run production server
-- `npm run lint` - run ESLint
-- `npm run lint:fix` - auto-fix lint issues
-- `npm run format` - format with Prettier
-- `npm run format:check` - check formatting
-- `npm run typecheck` - TypeScript check (no emit)
+| Script             | Yarn                | npm                    |
+| ------------------ | ------------------- | ---------------------- |
+| Development server | `yarn dev`          | `npm run dev`          |
+| Production build   | `yarn build`        | `npm run build`        |
+| Production server  | `yarn start`        | `npm run start`        |
+| ESLint             | `yarn lint`         | `npm run lint`         |
+| ESLint (fix)       | `yarn lint:fix`     | `npm run lint:fix`     |
+| Prettier format    | `yarn format`       | `npm run format`       |
+| Format check       | `yarn format:check` | `npm run format:check` |
+| TypeScript check   | `yarn typecheck`    | `npm run typecheck`    |
 
 ## Localization
 
@@ -100,7 +118,7 @@ Read:
 2. Add service API in `src/services`.
 3. Reuse query keys from `src/constants/query-keys.ts`.
 4. Add translations in both locale files.
-5. Run lint/build before opening a PR.
+5. Run `yarn lint` and `yarn build` (or `npm run lint` / `npm run build`) before opening a PR.
 
 ## License
 
