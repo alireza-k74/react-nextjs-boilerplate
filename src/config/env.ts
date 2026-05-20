@@ -22,7 +22,7 @@ assertPublicEnv();
 
 export const env = {
   app: {
-    name: getEnv("NEXT_PUBLIC_APP_NAME", "Boilerplate Web"),
+    name: getEnv("NEXT_PUBLIC_APP_NAME", "react-nextjs-boilerplate"),
     url: getEnv("NEXT_PUBLIC_APP_URL", "http://localhost:3000"),
     defaultLocale: getEnv("NEXT_PUBLIC_DEFAULT_LOCALE", "en"),
   },

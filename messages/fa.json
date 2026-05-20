@@ -1,6 +1,6 @@
 {
   "common": {
-    "appName": "بویلرپلیت وب",
+    "appName": "react-nextjs-boilerplate",
     "loading": "در حال بارگذاری...",
     "error": "خطایی رخ داد",
     "retry": "تلاش مجدد",

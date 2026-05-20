@@ -1,6 +1,6 @@
-# Boilerplate Web (Next.js Enterprise Starter)
+# react-nextjs-boilerplate
 
-Production-ready multilingual frontend boilerplate with Next.js 16, TypeScript strict mode, Tailwind v4, next-intl, Zustand, TanStack Query, and Firebase modular SDK.
+Production-ready multilingual Next.js starter with TypeScript strict mode, Tailwind v4, next-intl (EN/FA + RTL), Zustand, TanStack Query, Firebase, and enterprise-ready app structure.
 
 ## Highlights
 

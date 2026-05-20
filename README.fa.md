@@ -1,4 +1,4 @@
-# بویلرپلیت وب (نسخه سازمانی Next.js)
+# react-nextjs-boilerplate
 
 این پروژه یک بویلرپلیت آماده تولید برای فرانت اند است که با Next.js 16، TypeScript در حالت strict، Tailwind v4، next-intl، Zustand، TanStack Query و Firebase Modular SDK ساخته شده است.
 
