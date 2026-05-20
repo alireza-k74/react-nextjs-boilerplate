@@ -1,36 +1,107 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Boilerplate Web (Next.js Enterprise Starter)
+
+Production-ready multilingual frontend boilerplate with Next.js 16, TypeScript strict mode, Tailwind v4, next-intl, Zustand, TanStack Query, and Firebase modular SDK.
+
+## Highlights
+
+- Next.js 16 + App Router + TypeScript strict
+- Tailwind CSS v4 with shadcn-compatible design tokens
+- Class-based dark mode with `next-themes`
+- `next-intl` localization (`en`, `fa`) with RTL support
+- Feature-first structure (`auth`, `users`)
+- Reusable UI/form/layout/data-table building blocks
+- Axios API client with request/response interceptors
+- TanStack Query for server-state caching
+- Zustand stores for auth, modal, and UI state
+- Firebase modular wrappers (auth, firestore, storage, messaging)
+- Husky + lint-staged pre-commit integration
+
+## Tech Stack
+
+- **Framework**: Next.js 16
+- **Language**: TypeScript
+- **UI**: Tailwind v4, shadcn-style primitives, Radix UI
+- **State**: Zustand, TanStack Query
+- **Forms**: React Hook Form + Yup
+- **I18n**: next-intl
+- **Backend Integration**: Axios + Firebase SDK
+- **Tooling**: ESLint, Prettier, Husky, lint-staged
+
+## Project Structure
+
+See:
+
+- `docs/folder-structure.md`
+- `docs/architecture.md`
 
 ## Getting Started
 
-First, run the development server:
+### 1) Install dependencies
+
+```bash
+npm install
+```
+
+### 2) Configure environment variables
+
+```bash
+cp .env.example .env.local
+```
+
+Then update values in `.env.local`.
+
+### 3) Start development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Available Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `npm run dev` - start development server
+- `npm run build` - create production build
+- `npm run start` - run production server
+- `npm run lint` - run ESLint
+- `npm run lint:fix` - auto-fix lint issues
+- `npm run format` - format with Prettier
+- `npm run format:check` - check formatting
+- `npm run typecheck` - TypeScript check (no emit)
 
-## Learn More
+## Localization
 
-To learn more about Next.js, take a look at the following resources:
+- Locales are configured in `src/config/i18n.ts`.
+- Routing is configured through `src/i18n/routing.ts`.
+- Messages live in `messages/en.json` and `messages/fa.json`.
+- All pages are locale-prefixed (`/en/...`, `/fa/...`).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Authentication and Route Protection
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Middleware guards protected routes and redirects unauthenticated users.
+- Auth state is managed in `src/stores/auth-store.ts`.
+- Unauthorized responses from API trigger client-side auth reset.
 
-## Deploy on Vercel
+## Firebase
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+For setup details, read:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `docs/firebase-setup.md`
+
+## Coding Guidelines
+
+Read:
+
+- `docs/coding-standards.md`
+
+## Recommended Workflow
+
+1. Create feature module under `src/features/<feature>`.
+2. Add service API in `src/services`.
+3. Reuse query keys from `src/constants/query-keys.ts`.
+4. Add translations in both locale files.
+5. Run lint/build before opening a PR.
+
+## License
+
+Private/internal use unless specified otherwise by your organization.

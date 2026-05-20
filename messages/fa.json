@@ -1,0 +1,48 @@
+{
+  "common": {
+    "appName": "بویلرپلیت وب",
+    "loading": "در حال بارگذاری...",
+    "error": "خطایی رخ داد",
+    "retry": "تلاش مجدد",
+    "save": "ذخیره",
+    "cancel": "انصراف",
+    "delete": "حذف",
+    "edit": "ویرایش",
+    "search": "جستجو",
+    "noResults": "نتیجه‌ای یافت نشد",
+    "back": "بازگشت"
+  },
+  "nav": {
+    "home": "خانه",
+    "dashboard": "داشبورد",
+    "login": "ورود",
+    "logout": "خروج",
+    "settings": "تنظیمات"
+  },
+  "auth": {
+    "loginTitle": "ورود به حساب کاربری",
+    "registerTitle": "ایجاد حساب کاربری",
+    "email": "ایمیل",
+    "password": "رمز عبور",
+    "confirmPassword": "تکرار رمز عبور",
+    "loginButton": "ورود",
+    "registerButton": "ثبت‌نام",
+    "forgotPassword": "رمز عبور را فراموش کردید؟",
+    "noAccount": "حساب کاربری ندارید؟",
+    "hasAccount": "قبلاً ثبت‌نام کرده‌اید؟"
+  },
+  "home": {
+    "title": "بویلرپلیت Next.js سازمانی",
+    "subtitle": "استارتر آماده تولید برای SaaS، داشبورد و اپلیکیشن‌های سازمانی",
+    "cta": "رفتن به داشبورد"
+  },
+  "dashboard": {
+    "title": "داشبورد",
+    "welcome": "خوش آمدید"
+  },
+  "theme": {
+    "light": "روشن",
+    "dark": "تیره",
+    "system": "سیستم"
+  }
+}

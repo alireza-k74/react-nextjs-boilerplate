@@ -1,0 +1,48 @@
+{
+  "common": {
+    "appName": "Boilerplate Web",
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "retry": "Try again",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "search": "Search",
+    "noResults": "No results found",
+    "back": "Back"
+  },
+  "nav": {
+    "home": "Home",
+    "dashboard": "Dashboard",
+    "login": "Login",
+    "logout": "Logout",
+    "settings": "Settings"
+  },
+  "auth": {
+    "loginTitle": "Sign in to your account",
+    "registerTitle": "Create an account",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm password",
+    "loginButton": "Sign in",
+    "registerButton": "Sign up",
+    "forgotPassword": "Forgot password?",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?"
+  },
+  "home": {
+    "title": "Enterprise Next.js Boilerplate",
+    "subtitle": "Production-ready starter for SaaS, dashboards, and enterprise apps",
+    "cta": "Go to Dashboard"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welcome back"
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  }
+}
